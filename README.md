@@ -11,7 +11,7 @@ This project contains the main features of the lane protocol application.
 
 ## Documentation
 
-- [Info](doc/Info.md)
+- [Info](https://laneprotocol.vercel.app/notfound)
 
 > Install dependencies using [npm](https://npmjs.com)
 
