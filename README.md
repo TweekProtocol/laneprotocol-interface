@@ -1,4 +1,4 @@
-# 🥞 LaneProtocol Frontend
+# LaneProtocol Frontend
 
 <p align="center">
   <a href="https://laneprotocol.vercel.app">
