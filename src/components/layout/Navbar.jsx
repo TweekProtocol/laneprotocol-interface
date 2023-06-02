@@ -13,19 +13,29 @@ import {
   Profile,
 } from "../../styles/layout/Nav.styles";
 import { NavItems } from "../../data/NavItems";
-import { CTAButton } from "../../styles/common/CTAButton.styled";
+import { CTAButton, CTButton } from "../../styles/common/CTAButton.styled";
 import useScrollDirection from "../../hooks/useScrollDirection";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const scrollDirection = useScrollDirection("down");
+  const alert = () => {
+    const functionThatReturnPromise = () =>
+      new Promise((resolve) => setTimeout(resolve, 3000));
+    toast.promise(
+      functionThatReturnPromise,
+      {
+        pending: "Coming Soon",
+        success: "After Testnet",
+      },
+      { position: "top-center" }
+    );
+  };
 
   return (
     <>
-      <Nav
-        scroll={scrollDirection}
-        // className={`${router.pathname == "/dapp" ? "hidden" : "flex"}`}
-      >
+      <Nav scroll={scrollDirection}>
         <div>
           <a href="/">
             <Logo src="./asset/lane-logo.png" />
@@ -64,10 +74,7 @@ const Navbar = () => {
                     </NavLink>
                   ) : null}
                   {navItem.hasCTA ? (
-                    <CTAButton href="/dapp" target="_parent">
-                      {" "}
-                      Launch Dapp{""}
-                    </CTAButton>
+                    <CTButton onClick={alert}>Launch Dapp</CTButton>
                   ) : null}
                 </NavItem>
               );

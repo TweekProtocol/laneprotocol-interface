@@ -7,10 +7,10 @@ const HomeText = () => {
       <div className="flex gap-2 justify-evenly">
         <div className="flex flex-col gap-4 max-[1024px]:-translate-y-20">
           <h1 className="text-white text-6xl font-sofia font-semibold max-[800px]:text-4xl">
-            First Stop for Popular Crypto
+            First Stop for Decentralizaion
           </h1>
           <p className="text-neutral-300 text-3xl max-[800px]:text-2xl">
-            Trade over 50 cryptocurrencies on Lane Ex
+            Non-stop decentralized finance
           </p>
           <CTAButton href="/notfound" primary className="w-44 p-44">
             Get Started

@@ -45,7 +45,7 @@ const Footer = () => {
             <FaTwitter size={20} />
           </a>
           <a
-            href="https://discord.gg/ymWrmywPPq"
+            href="https://discord.gg/a37GPRSFpD"
             target="_blank"
             rel="noreferrer"
           >

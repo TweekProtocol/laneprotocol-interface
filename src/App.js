@@ -13,6 +13,8 @@ import { Dapp, Home, NotFoundPage } from "./pages";
 import { useEffect, useState } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import ReactTypingEffect from "react-typing-effect";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const theme = {
@@ -46,7 +48,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      {/* <BrowserRouter> */}
+      <ToastContainer />
       <GlobalStyles />
       {load ? (
         <div className="flex flex-col justify-center items-center gap-5 mt-44">
