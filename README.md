@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://laneprotocol.vercel.app">
-      <img src="https://laneprotocol.vercel.app/logo192.png" height="128">
+      <img src="https://laneprotocol.vercel.app/favicon.ico" height="128">
   </a>
 </p>
 
