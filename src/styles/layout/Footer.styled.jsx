@@ -9,7 +9,7 @@ export const StyledFooter = styled.footer`
   font-size: 16px;
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid #7e91ae;
+  border: 1px solid #7e91ae;
   position: relative;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -64,3 +64,14 @@ export const StyledIcon = styled.div`
 `;
 
 export const FooterImg = styled.img``;
+
+export const ProductsText = styled.p`
+  cursor: pointer;
+  font-size: 18px;
+  color: ${(props) => props.theme.colors.green};
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.orange};
+  }
+`;

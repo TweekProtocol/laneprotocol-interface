@@ -40,7 +40,7 @@ function App() {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    setLoad(true);
+    setLoad(false);
     setTimeout(() => {
       setLoad(false);
     }, 15000);
@@ -85,7 +85,9 @@ function App() {
           </Routes>
           <ScrollTop />
           {location.pathname === "/" ? "" : <BottomNav />}
-          <Footer />
+          <div className="p-5">
+            <Footer />
+          </div>
         </>
       )}
       {/* </BrowserRouter> */}

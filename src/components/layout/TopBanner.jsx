@@ -3,7 +3,7 @@ import {
   BannerSection,
   StyledTopBanner,
 } from "../../styles/layout/TopBanner.styled";
-import { GrFormClose } from "react-icons/gr";
+// import { GrFormClose } from "react-icons/gr";
 
 const TopBanner = () => {
   return (
@@ -33,7 +33,7 @@ const TopBanner = () => {
         </p>
       </BannerSection>
       <BannerSection>
-        <GrFormClose size={20} className="cursor-pointer" />
+        {/* <GrFormClose size={20} className="cursor-pointer" /> */}
       </BannerSection>
     </StyledTopBanner>
   );
